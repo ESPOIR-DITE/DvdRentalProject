@@ -10,13 +10,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane fx:id="rootPanel" prefHeight="600.0" prefWidth="990.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeUIController">
+<AnchorPane fx:id="rootPanelredonel" prefHeight="600.0" prefWidth="990.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeUIRedonelController">
          <children>
             <Pane prefHeight="33.0" prefWidth="990.0" style="-fx-background-color: #97a1a5;">
                <children>
                   <ImageView fx:id="addClose" fitHeight="33.0" fitWidth="47.0" layoutX="955.0" layoutY="2.0" onMouseClicked="#closeProgram" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@basics-22-128.png" />
+                        <Image url="@controllerP/basics-22-128.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="33.0" fitWidth="50.0" layoutX="900.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" />
@@ -24,33 +24,33 @@
             </Pane>
             <Pane prefHeight="607.0" prefWidth="229.0" style="-fx-background-color: #97a1a5;">
                <children>
-                  <Button layoutY="206.0" mnemonicParsing="false" onAction="#goRentbtn" prefHeight="33.0" prefWidth="229.0" style="-fx-background-color: #818280;" text="RENT DVD" />
-                  <Button layoutX="-1.0" layoutY="248.0" mnemonicParsing="false" onAction="#goReturn" prefHeight="33.0" prefWidth="229.0" style="-fx-background-color: #818280;" text="RETURN" />
+                  <Button layoutY="206.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="229.0" style="-fx-background-color: #818280;" text="Button" />
+                  <Button layoutX="-1.0" layoutY="295.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="229.0" style="-fx-background-color: #818280;" text="Button" />
+                  <Button layoutX="-1.0" layoutY="248.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="229.0" style="-fx-background-color: #818280;" text="Button" />
                   <Button layoutY="340.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="229.0" style="-fx-background-color: #818280;" text="Button" />
                   <ImageView fitHeight="164.0" fitWidth="200.0" layoutX="32.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@dvdicn.png" />
+                        <Image url="@controllerP/dvdicn.png" />
                      </image>
                   </ImageView>
-            <ComboBox fx:id="addCombo" layoutX="-5.0" layoutY="166.0" onAction="#getComboValue" prefHeight="33.0" prefWidth="236.0" promptText="                               ADD" style="-fx-background-color: #818280;" />
-            <ComboBox fx:id="listCombo" layoutY="290.0" onAction="#listComboGetValeu" prefHeight="41.0" prefWidth="229.0" promptText="                             LIST" style="-fx-background-color: #818280;" />
+            <ComboBox fx:id="addCombo" layoutX="-5.0" layoutY="166.0" prefHeight="33.0" prefWidth="236.0" promptText="                               ADD" style="-fx-background-color: #818280;" />
                </children>
             </Pane>
             <Pane layoutX="229.0" layoutY="33.0" prefHeight="574.0" prefWidth="761.0" style="-fx-background-color: #37393a;">
                <children>
-                  <TableView id="myTable" layoutX="525.0" prefHeight="558.0" prefWidth="236.0">
+                  <TableView id="myTable" layoutX="511.0" layoutY="14.0" prefHeight="545.0" prefWidth="236.0">
                     <columns>
                       <TableColumn prefWidth="75.0" text="C1" />
                       <TableColumn prefWidth="75.0" text="C2" />
                         <TableColumn prefWidth="75.0" text="C1" />
                     </columns>
                   </TableView>
-                  <TextArea fx:id="myArea" layoutX="14.0" layoutY="359.0" prefHeight="200.0" prefWidth="489.0" />
+                  <TextArea layoutX="14.0" layoutY="359.0" prefHeight="200.0" prefWidth="489.0" />
                   <Pane layoutX="14.0" layoutY="14.0" prefHeight="335.0" prefWidth="489.0">
                      <children>
                         <ImageView fitHeight="308.0" fitWidth="279.0" layoutX="89.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@fd319a1c.png" />
+                              <Image url="@controllerP/fd319a1c.png" />
                            </image>
                         </ImageView>
                      </children>

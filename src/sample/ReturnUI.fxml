@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="returnPanel" prefHeight="600.0" prefWidth="990.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ReturnController">
+    <children>
+        <Pane prefHeight="33.0" prefWidth="990.0" style="-fx-background-color: #97a1a5;">
+            <children>
+                <Pane layoutX="946.0" layoutY="3.0" prefHeight="32.0" prefWidth="44.0">
+                    <children>
+                        <ImageView fitHeight="33.0" fitWidth="44.0" layoutX="6.0" layoutY="-2.0" onMouseClicked="#closeProgram" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@basics-22-128.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+        <Pane prefHeight="607.0" prefWidth="229.0" style="-fx-background-color: #97a1a5;">
+            <children>
+                <Button layoutY="206.0" mnemonicParsing="false" onAction="#goRentbtn" prefHeight="33.0" prefWidth="229.0" style="-fx-background-color: #818280;" text="RENT" />
+                <Button layoutX="-1.0" layoutY="248.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="229.0" style="-fx-background-color: #818280;" text="RETURN" />
+                <Button layoutY="340.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="229.0" style="-fx-background-color: #818280;" text="Button" />
+                <Pane layoutX="13.0" layoutY="2.0" prefHeight="160.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@dvdicn.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+            <ComboBox fx:id="addCombo" layoutY="168.0" onAction="#getComboValue" prefHeight="32.0" prefWidth="229.0" promptText="                             ADD" style="-fx-background-color: #818280;" />
+            <ComboBox fx:id="listCombo" layoutY="287.0" onAction="#listComboGetValeu" prefHeight="43.0" prefWidth="229.0" promptText="                            LIST" style="-fx-background-color: #818280;" />
+            </children>
+        </Pane>
+        <Pane layoutX="229.0" layoutY="33.0" prefHeight="574.0" prefWidth="761.0" style="-fx-background-color: #37393a;">
+            <children>
+                <TableView id="myTable" layoutX="525.0" prefHeight="558.0" prefWidth="236.0">
+                    <columns>
+                        <TableColumn prefWidth="75.0" text="C1" />
+                        <TableColumn prefWidth="75.0" text="C2" />
+                        <TableColumn prefWidth="75.0" text="C1" />
+                    </columns>
+                </TableView>
+                <TextArea fx:id="myArea" layoutX="14.0" layoutY="359.0" prefHeight="200.0" prefWidth="489.0" />
+                <Pane fx:id="dvdPanel" layoutX="14.0" layoutY="14.0" prefHeight="335.0" prefWidth="489.0">
+                    <children>
+                        <Label layoutX="194.0" layoutY="4.0" text="RENT A DVD" textFill="#eeeeee">
+                            <font>
+                                <Font name="Open Sans Light" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="137.0" layoutY="168.0" text="PLEASE FIRST CHECK THE PENALTIES" textFill="#f80606" />
+                        <Button fx:id="customerSavebtn" layoutX="213.0" layoutY="296.0" mnemonicParsing="false" onAction="#severRentPanel" style="-fx-background-radius: 40;" text="SAVE" />
+                        <ComboBox layoutX="135.0" layoutY="80.0" prefHeight="25.0" prefWidth="200.0" promptText="SELECT RENTAL NUMBER" />
+                  <Button layoutX="135.0" layoutY="185.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="PENALTY" />
+                    </children></Pane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
