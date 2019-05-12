@@ -60,18 +60,18 @@
                 <TextArea layoutX="14.0" layoutY="359.0" prefHeight="200.0" prefWidth="489.0" />
                 <Pane layoutX="14.0" layoutY="14.0" prefHeight="335.0" prefWidth="489.0">
                <children>
-                  <Label layoutX="202.0" layoutY="30.0" text="ADD CUSTOMER" textFill="#eeecec">
+                  <Label layoutX="202.0" layoutY="30.0" text="ADD DVD" textFill="#eeecec">
                      <font>
                         <Font name="Open Sans" size="14.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="110.0" layoutY="81.0" prefHeight="25.0" prefWidth="304.0" promptText="Dvd name" />
-                  <TextField layoutX="110.0" layoutY="121.0" prefHeight="25.0" prefWidth="304.0" promptText="Dvd name" />
+                  <TextField fx:id="dvdNumber" layoutX="110.0" layoutY="81.0" prefHeight="25.0" prefWidth="304.0" promptText="Dvd Number" />
+                  <TextField fx:id="title" layoutX="110.0" layoutY="121.0" prefHeight="25.0" prefWidth="304.0" promptText="Tille" />
                   <ComboBox fx:id="categoryCombo" layoutX="110.0" layoutY="163.0" onAction="#pressButton" onMouseClicked="#pressButton" prefHeight="25.0" prefWidth="304.0" promptText="Category" />
-                  <CheckBox layoutX="341.0" layoutY="217.0" mnemonicParsing="false" text="New release" textFill="#fcf9f9" />
+                  <CheckBox fx:id="newRelease" layoutX="341.0" layoutY="217.0" mnemonicParsing="false" text="New release" textFill="#fcf9f9" />
                   <Label layoutX="148.0" layoutY="217.0" text="Check if the dvd is a new realese" textFill="#f2eeee" />
                   <Label layoutX="146.0" layoutY="266.0" text="Red means the dvd is not availlable" textFill="WHITE" />
-                  <RadioButton layoutX="342.0" layoutY="266.0" mnemonicParsing="false" text="availability" textFill="#fffdfd" />
+                  <RadioButton fx:id="availableForRen" layoutX="342.0" layoutY="266.0" mnemonicParsing="false" text="availability" textFill="#fffdfd" />
                   <Button fx:id="saveDvdbtn" layoutX="236.0" layoutY="296.0" mnemonicParsing="false" onAction="#savebtnPressed" text="SAVE" />
                </children></Pane>
             </children>

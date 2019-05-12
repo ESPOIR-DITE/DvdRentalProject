@@ -55,7 +55,7 @@
                         <TableColumn prefWidth="75.0" text="C1" />
                     </columns>
                   </TableView>
-                  <TextArea layoutX="14.0" layoutY="359.0" prefHeight="200.0" prefWidth="489.0" />
+                  <TextArea fx:id="myArea" layoutX="14.0" layoutY="359.0" prefHeight="200.0" prefWidth="489.0" />
                   <Pane fx:id="dvdPanel" layoutX="14.0" layoutY="14.0" prefHeight="335.0" prefWidth="489.0">
                      <children>
                         <Label layoutX="194.0" layoutY="4.0" text="ADD CUSTOMER" textFill="#eeeeee">
@@ -63,13 +63,14 @@
                               <Font name="Open Sans Light" size="15.0" />
                            </font>
                         </Label>
-                        <TextField layoutX="64.0" layoutY="80.0" prefHeight="25.0" prefWidth="370.0" promptText="Furst name" style="-fx-background-radius: 20;" />
-                        <TextField layoutX="65.0" layoutY="244.0" prefHeight="25.0" prefWidth="370.0" promptText="Furst name" style="-fx-background-radius: 20;" />
-                        <TextField layoutX="65.0" layoutY="187.0" prefHeight="25.0" prefWidth="370.0" promptText="Furst name" style="-fx-background-radius: 20;" />
-                        <TextField layoutX="65.0" layoutY="133.0" prefHeight="25.0" prefWidth="370.0" promptText="Furst name" style="-fx-background-radius: 20;" />
-                        <CheckBox layoutX="142.0" layoutY="288.0" mnemonicParsing="false" text="CheckBox" />
+                        <TextField fx:id="customerNumberfield" layoutX="65.0" layoutY="52.0" prefHeight="25.0" prefWidth="370.0" promptText="Customer Number" style="-fx-background-radius: 20;" />
+                        <TextField fx:id="phoneNumberField" layoutX="65.0" layoutY="201.0" prefHeight="25.0" prefWidth="370.0" promptText="Phone Number" style="-fx-background-radius: 20;" />
+                        <TextField fx:id="surNameField" layoutX="65.0" layoutY="151.0" prefHeight="25.0" prefWidth="370.0" promptText="Surname" style="-fx-background-radius: 20;" />
+                        <TextField fx:id="firstNameField" layoutX="65.0" layoutY="99.0" prefHeight="25.0" prefWidth="370.0" promptText="First Name" style="-fx-background-radius: 20;" />
+                        <CheckBox fx:id="canRentfield" layoutX="142.0" layoutY="288.0" mnemonicParsing="false" text="CheckBox" />
                         <Label layoutX="71.0" layoutY="288.0" text="PAY" textFill="#f2ecec" />
                         <Button fx:id="customerSavebtn" layoutX="382.0" layoutY="293.0" mnemonicParsing="false" onAction="#saverButton" style="-fx-background-radius: 40;" text="SAVE" />
+                  <TextField fx:id="CreditField" layoutX="68.0" layoutY="251.0" prefHeight="25.0" prefWidth="370.0" promptText="Credit" />
                      </children></Pane>
                </children>
             </Pane>

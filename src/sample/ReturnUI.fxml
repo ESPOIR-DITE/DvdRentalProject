@@ -31,7 +31,7 @@
             <children>
                 <Button layoutY="206.0" mnemonicParsing="false" onAction="#goRentbtn" prefHeight="33.0" prefWidth="229.0" style="-fx-background-color: #818280;" text="RENT" />
                 <Button layoutX="-1.0" layoutY="248.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="229.0" style="-fx-background-color: #818280;" text="RETURN" />
-                <Button layoutY="340.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="229.0" style="-fx-background-color: #818280;" text="Button" />
+                <Button layoutY="340.0" mnemonicParsing="false" onAction="#cancel" prefHeight="33.0" prefWidth="229.0" style="-fx-background-color: #e90b0b;" text="CANCEL" />
                 <Pane layoutX="13.0" layoutY="2.0" prefHeight="160.0" prefWidth="200.0">
                     <children>
                         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
@@ -64,8 +64,8 @@
                         </Label>
                         <Label layoutX="137.0" layoutY="168.0" text="PLEASE FIRST CHECK THE PENALTIES" textFill="#f80606" />
                         <Button fx:id="customerSavebtn" layoutX="213.0" layoutY="296.0" mnemonicParsing="false" onAction="#severRentPanel" style="-fx-background-radius: 40;" text="SAVE" />
-                        <ComboBox layoutX="135.0" layoutY="80.0" prefHeight="25.0" prefWidth="200.0" promptText="SELECT RENTAL NUMBER" />
-                  <Button layoutX="135.0" layoutY="185.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="PENALTY" />
+                        <ComboBox fx:id="returntList" layoutX="135.0" layoutY="80.0" prefHeight="25.0" prefWidth="200.0" promptText="SELECT RENTAL NUMBER" />
+                  <Button fx:id="checkbtn" layoutX="135.0" layoutY="185.0" mnemonicParsing="false" onAction="#checker" prefHeight="25.0" prefWidth="200.0" text="PENALTY" />
                     </children></Pane>
             </children>
         </Pane>
